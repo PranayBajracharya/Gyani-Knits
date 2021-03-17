@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Permanent+Marker&family=Cormorant+Unicase:wght@600&family=Acme&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    /*margin: .5rem 0;*/
+}
+
+/*Utility*/
+
+.h1 {font-size: 3rem}
+.h2 {font-size: 2rem}
+
+.py-0 { padding: 1rem 0; }
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.p-1 { padding: 1.5rem; }
+.p-3 { padding: 3rem; }
+.p-2 { padding: 2rem; }
+
+
+
+/*Navbar*/
+#navbar {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    text-align: center;
+    z-index: 10;
+    height: 100%;
+    width: 260px;
+    padding: 1rem;
+}
+
+#navbar a img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 75px 0 5px 0;
+}
+
+#navbar a h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-left: 20%;
+}
+
+#navbar ul li a {
+    font-family: 'Acme', sans-serif;
+    display: block;
+    color: #ffffff;
+    margin: .7rem;
+}
+
+
+#header {
+    background: #333333 url("../img/final_cover.jpg") no-repeat center center/cover;
+    height: 100vh;
+    margin-left: 260px;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+/*Products*/
+#products{
+    margin-left: 260px;
+    text-align: center;
+}
+
+#products .head img{
+    width: 100%;
+    margin: 4rem 0;
+    max-width: 500px;
+}
+
+#products .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#products .items img{
+    margin: 2rem 3rem;
+    width: calc(30vw);
+    max-height: 700px;
+}
+
+#products .items p {
+    margin-bottom: 3rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 260px;
+}
+
+#footer div {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+#footer #social > div {
+    margin: 0 2rem;
+    padding: 2rem;
+}
+
+#footer p {
+    margin-bottom: 1rem;
+}
